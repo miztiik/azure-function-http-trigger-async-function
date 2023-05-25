@@ -4,7 +4,7 @@ This repo contains a sample Python Azure Function that uses Asyncio. Gets a inte
 
 ## 🎯 Solution
 
-![Miztiik Automation - Azure Python Function with Async Processing](images/miztiik_architecture_event_stream_processing_with_azure_event_hub_functions_cosmos_001.png)
+![Miztiik Automation - Azure Python Function with Async Processing](images/miztiik_architecture_azure_async_python_fn_001.png)
 
 1. ## 🧰 Prerequisites
 
