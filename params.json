@@ -1,0 +1,66 @@
+{
+  "$schema": "https://schema.management.azure.com/schemas/2019-04-01/deploymentParameters.json#",
+  "contentVersion": "1.0.0.0",
+  "parameters": {
+    "deploymentParams": {
+      "value": {
+        "location": "northeurope",
+        "global_uniqueness": "002",
+        "enterprise_name": "Miztiik_Enterprises",
+        "enterprise_name_suffix": "async_fn_http_trigger",
+        "sub_deploymnet_prefix": "Miztiik_Verse"
+      }
+    },
+    "identityParams": {
+      "value": {
+        "identityNamePrefix": "usr_mgd_identity"
+      }
+    },
+    "funcParams": {
+      "value": {
+        "funcStorageAccountNamePrefix": "funcstorage",
+        "funcAppPrefix": "store-backend",
+        "funcNamePrefix": "events",
+        "funcRuntime": "python",
+        "funcLogLevel": "Warning",
+        "skuName": "Y1",
+        "funcHostingPlanTier": "Dynamic"
+      }
+    },   
+    "storageAccountParams": {
+      "value": {
+        "storageAccountNamePrefix": "warehouse",
+        "storageAccountType": "Standard_LRS",
+        "allowBlobPublicAccess": false,
+        "kind": "StorageV2",
+        "minimumTlsVersion": "TLS1_2",
+        "fault_tolerant_sku": "Standard_ZRS",
+        "sku": "Standard_LRS",
+        "blobNamePrefix": "store-events"
+      }
+    },
+    "logAnalyticsWorkspaceParams": {
+      "value": {
+        "workspaceName": "lumberYard",
+        "retentionInDays": 32,
+        "dailyQuotaGb": 2,
+        "commitTier": false,
+        "storeEventsCustomTableName": "storeEvents",
+        "automationEventsCustomTableName": "miztiikAutomationEvents",
+        "managedRunCmdCustomTableName": "miztiikRunCmdEvents"      }
+    },
+    "brandTags": {
+      "value": {
+        "owner": "Mystique",
+        "automation_by": "Mystique_Automation",
+        "github_profile": "https://github.com/miztiik",
+        "about_me": "https://github.com/miztiik/about-me",
+        "udemy_profile": "https://www.udemy.com/user/n-kumar",
+        "skill_profile": "https://www.skillshare.com/r/profile/Kumar/407603333",
+        "buy_me_a_coffee": "https://ko-fi.com/miztiik",
+        "project": "azure-function-http-trigger-async-function",
+        "github_repo_url": "https://github.com/miztiik/azure-function-http-trigger-async-function"
+      }
+    }
+  }
+}
